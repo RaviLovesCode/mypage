@@ -1,0 +1,2 @@
+# mypage
+for fun
