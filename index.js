@@ -20,13 +20,13 @@ canvas.height = innerHeight;
  let c = canvas.getContext('2d');
  let x = 100;
  let y = 100;
- let radius = 50;
+ let radius = 30;
  let dx = 5;
  let dy = 5;
 
 function move(){
     requestAnimationFrame(move);
-	c.clearRect(0, 0, innerWidth, innerHeight);
+	//c.clearRect(0, 0, innerWidth, innerHeight);
     c.beginPath();
     c.fillStyle = " lightGreen";
     c.arc(x, y, radius, 0, Math.PI * 2, false);
