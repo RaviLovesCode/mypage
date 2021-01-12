@@ -23,12 +23,12 @@ canvas.height = innerHeight;
  let radius = 30;
  let dx = 5;
  let dy = 5;
-
+ let color = ["orange","red", "blue", "voilet", "indigo", "yellow", "orange","purple"];
 function move(){
     requestAnimationFrame(move);
 	//c.clearRect(0, 0, innerWidth, innerHeight);
     c.beginPath();
-    c.fillStyle = " lightGreen";
+    c.fillStyle = color[Math.floor(Math.random() * color.length)];
     c.arc(x, y, radius, 0, Math.PI * 2, false);
     c.fill();
     c.closePath();
