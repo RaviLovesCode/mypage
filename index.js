@@ -26,7 +26,7 @@ canvas.height = innerHeight;
  let color = ["orange","red", "blue", "voilet", "indigo", "yellow", "orange","purple"];
 function move(){
     requestAnimationFrame(move);
-	//c.clearRect(0, 0, innerWidth, innerHeight);
+    c.clearRect(0, 0, innerWidth, innerHeight);
     c.beginPath();
     c.fillStyle = color[Math.floor(Math.random() * color.length)];
     c.arc(x, y, radius, 0, Math.PI * 2, false);
@@ -36,11 +36,11 @@ function move(){
     y += dy;
     if(x + radius > innerWidth || x - radius< 0 ){
         dx = -dx;
-	c.fillStyle = "black";    
+	  
     }
     if(y + radius > innerHeight || y - radius< 0 ){
         dy = -dy;
-	c.fillStyle = "red";
+	
     }
    
  }
