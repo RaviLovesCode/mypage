@@ -36,11 +36,11 @@ function move(){
     y += dy;
     if(x + radius > innerWidth || x - radius< 0 ){
         dx = -dx;
-	c.fillStyle = "purple";    
+	c.fillStyle = "black";    
     }
     if(y + radius > innerHeight || y - radius< 0 ){
         dy = -dy;
-	c.fillStyle = "pink";
+	c.fillStyle = "red";
     }
    
  }
