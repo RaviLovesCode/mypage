@@ -23,7 +23,8 @@ canvas.height = innerHeight;
  let radius = 30;
  let dx = 5;
  let dy = 5;
- let color = ["orange","red", "blue", "voilet", "indigo", "yellow", "orange","purple"];
+//  let color = ["orange","red", "blue", "voilet", "indigo", "yellow", "orange","purple"];
+let color = ["orange"];
 function move(){
     requestAnimationFrame(move);
     c.clearRect(0, 0, innerWidth, innerHeight);
